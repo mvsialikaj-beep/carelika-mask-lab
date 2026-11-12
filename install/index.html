@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Install CARELIKA Mask Lab</title>
+<meta name="description" content="Install CARELIKA Mask Lab on Android or iPhone. Professional mask protocols, mixing specs and exposure timer. Works offline.">
+<link rel="canonical" href="https://masklab.carelikacosmetics.com/install/">
+<meta property="og:title" content="Install CARELIKA Mask Lab">
+<meta property="og:description" content="Professional mask protocols for cosmetologists. Android and iPhone. Works offline.">
+<meta property="og:image" content="https://masklab.carelikacosmetics.com/img/cover.jpg">
+<meta property="og:url" content="https://masklab.carelikacosmetics.com/install/">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Mask Lab">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="../img/icons/icon-192.png">
+<link rel="apple-touch-icon" href="../img/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+<style>
+:root{
+  --paper:#FFFFFF;--ink:#1F2422;--muted:#6E6F70;--line:#E3E7E5;
+  --mint:#A7E6D7;--mint-h:#8FD9C7;--soft:#F4FBF9;--soft2:#EEF9F6;
+  --ff:"Montserrat",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{background:var(--paper)}
+body{margin:0;color:var(--ink);font-family:var(--ff);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+button{font-family:var(--ff);color:var(--ink);cursor:pointer}
+.wrap{max-width:560px;margin:0 auto;padding:0 max(16px,env(safe-area-inset-left,0px)) 40px max(16px,env(safe-area-inset-right,0px))}
+:focus-visible{outline:2px solid var(--mint-h);outline-offset:2px}
+
+.top{display:flex;align-items:center;gap:10px;padding:calc(14px + env(safe-area-inset-top,0px)) 0 14px;border-bottom:1px solid var(--line)}
+.top .logo{height:34px;width:auto}
+.top .pg{font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;background:var(--soft2);border:1px solid var(--mint);padding:5px 9px}
+.top .sp{flex:1}
+.lang{border:1px solid var(--line);background:var(--paper);font-size:12px;font-weight:600;letter-spacing:.08em;padding:7px 8px;border-radius:0;color:var(--ink)}
+
+.hero{display:flex;gap:16px;align-items:center;padding:28px 0 8px}
+.hero .icon{width:84px;height:84px;border-radius:20px;box-shadow:0 2px 10px rgba(31,36,34,.12);flex:none}
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin:0 0 4px}
+h1{margin:0;font-size:26px;line-height:1.15;font-weight:300;letter-spacing:.02em;text-transform:uppercase}
+.lead{color:var(--muted);margin:14px 0 0}
+.feats{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 0;padding:0;list-style:none}
+.feats li{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;background:var(--soft2);padding:5px 9px}
+
+.pick{margin:26px 0 0;display:grid;gap:12px}
+.store{display:flex;align-items:center;gap:16px;width:100%;text-align:left;background:var(--paper);border:1px solid var(--line);padding:18px 18px;min-height:88px;transition:border-color .15s,background .15s}
+.store:hover{border-color:var(--mint-h)}
+.store.mine{border:2px solid var(--mint-h);background:var(--soft)}
+.store svg.os{width:40px;height:40px;flex:none}
+.store .t{flex:1;min-width:0}
+.store .n{display:block;font-size:17px;font-weight:600}
+.store .s{display:block;font-size:13px;color:var(--muted)}
+.store .tag{display:none;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;background:var(--mint);padding:3px 7px;margin-top:6px;width:max-content}
+.store.mine .tag{display:block}
+.store .go{flex:none;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;background:var(--mint);padding:11px 14px}
+.store:hover .go{background:var(--mint-h)}
+
+.panel{display:none;margin:12px 0 0;border:1px solid var(--line);background:var(--soft);padding:18px}
+.panel.on{display:block}
+.panel h2{margin:0 0 12px;font-size:15px;font-weight:600;letter-spacing:.04em}
+.steps{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.steps li{display:flex;gap:12px;align-items:flex-start}
+.steps .k{flex:none;width:28px;height:28px;border-radius:50%;background:var(--mint);font-weight:700;display:flex;align-items:center;justify-content:center;font-size:13px}
+.steps .x{padding-top:3px}
+.steps svg{width:20px;height:20px;vertical-align:-4px;margin:0 2px}
+.note{font-size:13px;color:var(--muted);margin:12px 0 0}
+.btn{display:inline-flex;align-items:center;gap:10px;margin:14px 0 0;background:var(--mint);border:0;padding:13px 18px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);text-decoration:none}
+.btn:hover{background:var(--mint-h)}
+.btn.ghost{background:transparent;border:1px solid var(--ink)}
+
+.qr{display:none;margin:26px 0 0;border:1px solid var(--line);padding:18px;gap:18px;align-items:center}
+.qr.on{display:flex}
+.qr #qrc{flex:none;width:132px;height:132px}
+.qr #qrc svg,.qr #qrc img{width:132px;height:132px}
+.qr p{margin:0;font-size:14px}
+
+.foot{margin:30px 0 0;padding:16px 0 0;border-top:1px solid var(--line);font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 16px}
+.foot a{color:var(--ink)}
+@media (max-width:380px){h1{font-size:22px}.hero .icon{width:68px;height:68px;border-radius:16px}.store .go{padding:10px 11px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <img class="logo" src="../img/logo.png" alt="CARELIKA Professional Skin Care">
+    <span class="pg">Mask Lab</span>
+    <span class="sp"></span>
+    <select class="lang" id="lang" aria-label="Language">
+      <option value="en">EN</option><option value="lv">LV</option><option value="ru">RU</option><option value="es">ES</option><option value="de">DE</option>
+    </select>
+  </header>
+
+  <section class="hero">
+    <img class="icon" src="../img/icons/icon-512.png" alt="">
+    <div>
+      <p class="eyebrow" data-t="eyebrow">Free app for professionals</p>
+      <h1>CARELIKA<br>Mask Lab</h1>
+    </div>
+  </section>
+  <p class="lead" data-t="lead">Serum, mask, mixing and exposure for every skin. Choose your phone and install in a few seconds.</p>
+  <ul class="feats">
+    <li data-t="f1">Works offline</li><li data-t="f2">Exposure timer</li><li>EN · LV · RU · ES · DE</li>
+  </ul>
+
+  <div class="pick">
+    <button class="store" id="android" type="button">
+      <svg class="os" viewBox="0 0 24 24" aria-hidden="true"><path fill="#3DDC84" d="M17.6 9.48l1.84-3.18a.38.38 0 0 0-.66-.38l-1.86 3.22A11.4 11.4 0 0 0 12 8.08c-1.77 0-3.42.39-4.92 1.06L5.22 5.92a.38.38 0 0 0-.66.38L6.4 9.48A10.8 10.8 0 0 0 1 18h22a10.8 10.8 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>
+      <span class="t"><span class="n">Android</span><span class="s" data-t="aSub">Phone and tablet</span><span class="tag" data-t="mine">Your device</span></span>
+      <span class="go" data-t="install">Install</span>
+    </button>
+    <div class="panel" id="aPanel" aria-live="polite"></div>
+
+    <button class="store" id="ios" type="button">
+      <svg class="os" viewBox="0 0 24 24" aria-hidden="true"><path fill="#1F2422" d="M16.37 12.6c-.03-2.6 2.12-3.85 2.22-3.91-1.21-1.77-3.09-2.01-3.76-2.04-1.6-.16-3.13.94-3.94.94-.82 0-2.07-.92-3.4-.9-1.75.03-3.36 1.02-4.26 2.58-1.82 3.15-.47 7.81 1.3 10.37.87 1.25 1.9 2.65 3.25 2.6 1.31-.05 1.8-.84 3.38-.84 1.57 0 2.02.84 3.4.82 1.4-.03 2.29-1.27 3.15-2.53.99-1.45 1.4-2.86 1.42-2.93-.03-.01-2.73-1.05-2.76-4.16zM13.8 4.96c.72-.87 1.2-2.08 1.07-3.29-1.03.04-2.29.69-3.03 1.56-.66.77-1.25 2-1.09 3.18 1.15.09 2.33-.58 3.05-1.45z"/></svg>
+      <span class="t"><span class="n">iPhone / iPad</span><span class="s" data-t="iSub">Safari, 3 taps</span><span class="tag" data-t="mine">Your device</span></span>
+      <span class="go" data-t="install">Install</span>
+    </button>
+    <div class="panel" id="iPanel">
+      <h2 data-t="iTitle">Add Mask Lab to your Home Screen</h2>
+      <ol class="steps">
+        <li><span class="k">1</span><span class="x" data-t="i1">Open this page in Safari.</span></li>
+        <li><span class="k">2</span><span class="x"><span data-t="i2a">Tap Share</span> <svg viewBox="0 0 24 24" fill="none" stroke="#0A84FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3M8 7l4-4 4 4"/><path d="M6 11H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1h-1"/></svg> <span data-t="i2b">at the bottom of the screen.</span></span></li>
+        <li><span class="k">3</span><span class="x" data-t="i3">Choose "Add to Home Screen", then tap "Add".</span></li>
+      </ol>
+      <p class="note" data-t="iNote">The Mask Lab icon appears on your Home Screen. It opens full screen and works without internet.</p>
+    </div>
+  </div>
+
+  <div class="qr" id="qr">
+    <div id="qrc" aria-hidden="true"></div>
+    <p data-t="qr">Scan with your phone camera to install Mask Lab.</p>
+  </div>
+
+  <footer class="foot">
+    <a href="../" data-t="open">Open Mask Lab in the browser</a>
+    <a href="https://carelikacosmetics.com/" rel="noopener">carelikacosmetics.com</a>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var T={
+    en:{eyebrow:"Free app for professionals",lead:"Serum, mask, mixing and exposure for every skin. Choose your phone and install in a few seconds.",f1:"Works offline",f2:"Exposure timer",aSub:"Phone and tablet",iSub:"Safari, 3 taps",mine:"Your device",install:"Install",
+      iTitle:"Add Mask Lab to your Home Screen",i1:"Open this page in Safari.",i2a:"Tap Share",i2b:"at the bottom of the screen.",i3:"Choose \"Add to Home Screen\", then tap \"Add\".",iNote:"The Mask Lab icon appears on your Home Screen. It opens full screen and works without internet.",
+      qr:"Scan with your phone camera to install Mask Lab.",open:"Open Mask Lab in the browser",
+      aDone:"Done. Mask Lab is on your Home Screen.",aInstalled:"Mask Lab is already installed on this device.",aOpen:"Open Mask Lab",
+      aTitle:"Install on Android",aChrome:"In Chrome, tap the menu (three dots) and choose \"Install app\" or \"Add to Home Screen\".",aApkTitle:"Or download the app file",aApk:"Download APK",aApkNote:"Android may ask you to allow installs from your browser. Tap Settings, allow, then go back and tap Install.",
+      aDesk:"Open this page on your Android phone, or scan the QR code below."},
+    lv:{eyebrow:"Bezmaksas lietotne profesionāļiem",lead:"Serums, maska, sajaukšana un iedarbības laiks katram ādas tipam. Izvēlies savu telefonu un uzinstalē dažās sekundēs.",f1:"Strādā bez interneta",f2:"Iedarbības taimeris",aSub:"Telefons un planšete",iSub:"Safari, 3 pieskārieni",mine:"Tava ierīce",install:"Instalēt",
+      iTitle:"Pievieno Mask Lab sākuma ekrānam",i1:"Atver šo lapu Safari pārlūkā.",i2a:"Pieskaries Kopīgot",i2b:"ekrāna apakšā.",i3:"Izvēlies \"Pievienot sākuma ekrānam\" un pieskaries \"Pievienot\".",iNote:"Mask Lab ikona parādīsies sākuma ekrānā. Lietotne atveras pilnekrānā un strādā bez interneta.",
+      qr:"Noskenē ar telefona kameru, lai uzinstalētu Mask Lab.",open:"Atvērt Mask Lab pārlūkā",
+      aDone:"Gatavs. Mask Lab ir tavā sākuma ekrānā.",aInstalled:"Mask Lab šajā ierīcē jau ir uzinstalēts.",aOpen:"Atvērt Mask Lab",
+      aTitle:"Instalēšana Android",aChrome:"Chrome pārlūkā pieskaries izvēlnei (trīs punkti) un izvēlies \"Instalēt lietotni\" vai \"Pievienot sākuma ekrānam\".",aApkTitle:"Vai lejuplādē lietotnes failu",aApk:"Lejuplādēt APK",aApkNote:"Android var lūgt atļaut instalēšanu no pārlūka. Pieskaries Iestatījumi, atļauj, tad atgriezies un pieskaries Instalēt.",
+      aDesk:"Atver šo lapu savā Android telefonā vai noskenē QR kodu zemāk."},
+    ru:{eyebrow:"Бесплатное приложение для профессионалов",lead:"Сыворотка, маска, смешивание и время экспозиции для любой кожи. Выберите свой телефон и установите за несколько секунд.",f1:"Работает без интернета",f2:"Таймер экспозиции",aSub:"Телефон и планшет",iSub:"Safari, 3 касания",mine:"Ваше устройство",install:"Установить",
+      iTitle:"Добавьте Mask Lab на экран «Домой»",i1:"Откройте эту страницу в Safari.",i2a:"Нажмите «Поделиться»",i2b:"внизу экрана.",i3:"Выберите «На экран \"Домой\"» и нажмите «Добавить».",iNote:"Иконка Mask Lab появится на экране «Домой». Приложение открывается на весь экран и работает без интернета.",
+      qr:"Отсканируйте камерой телефона, чтобы установить Mask Lab.",open:"Открыть Mask Lab в браузере",
+      aDone:"Готово. Mask Lab на главном экране.",aInstalled:"Mask Lab уже установлен на этом устройстве.",aOpen:"Открыть Mask Lab",
+      aTitle:"Установка на Android",aChrome:"В Chrome нажмите меню (три точки) и выберите «Установить приложение» или «Добавить на главный экран».",aApkTitle:"Или скачайте файл приложения",aApk:"Скачать APK",aApkNote:"Android может попросить разрешить установку из браузера. Нажмите «Настройки», разрешите, вернитесь и нажмите «Установить».",
+      aDesk:"Откройте эту страницу на телефоне Android или отсканируйте QR-код ниже."},
+    es:{eyebrow:"App gratuita para profesionales",lead:"Sérum, mascarilla, mezcla y tiempo de exposición para cada piel. Elige tu teléfono e instala en unos segundos.",f1:"Funciona sin internet",f2:"Temporizador de exposición",aSub:"Teléfono y tableta",iSub:"Safari, 3 toques",mine:"Tu dispositivo",install:"Instalar",
+      iTitle:"Añade Mask Lab a tu pantalla de inicio",i1:"Abre esta página en Safari.",i2a:"Toca Compartir",i2b:"en la parte inferior de la pantalla.",i3:"Elige \"Añadir a pantalla de inicio\" y toca \"Añadir\".",iNote:"El icono de Mask Lab aparece en tu pantalla de inicio. Se abre a pantalla completa y funciona sin internet.",
+      qr:"Escanea con la cámara del teléfono para instalar Mask Lab.",open:"Abrir Mask Lab en el navegador",
+      aDone:"Listo. Mask Lab está en tu pantalla de inicio.",aInstalled:"Mask Lab ya está instalada en este dispositivo.",aOpen:"Abrir Mask Lab",
+      aTitle:"Instalar en Android",aChrome:"En Chrome, toca el menú (tres puntos) y elige \"Instalar aplicación\" o \"Añadir a pantalla de inicio\".",aApkTitle:"O descarga el archivo de la app",aApk:"Descargar APK",aApkNote:"Android puede pedirte que permitas instalar desde el navegador. Toca Ajustes, permite, vuelve y toca Instalar.",
+      aDesk:"Abre esta página en tu teléfono Android o escanea el código QR de abajo."},
+    de:{eyebrow:"Kostenlose App für Profis",lead:"Serum, Maske, Anmischen und Einwirkzeit für jeden Hauttyp. Wähle dein Telefon und installiere in wenigen Sekunden.",f1:"Funktioniert offline",f2:"Einwirk-Timer",aSub:"Telefon und Tablet",iSub:"Safari, 3 Tipps",mine:"Dein Gerät",install:"Installieren",
+      iTitle:"Mask Lab zum Home-Bildschirm hinzufügen",i1:"Öffne diese Seite in Safari.",i2a:"Tippe auf Teilen",i2b:"unten am Bildschirm.",i3:"Wähle \"Zum Home-Bildschirm\" und tippe auf \"Hinzufügen\".",iNote:"Das Mask Lab Symbol erscheint auf deinem Home-Bildschirm. Die App öffnet im Vollbild und funktioniert ohne Internet.",
+      qr:"Mit der Handykamera scannen, um Mask Lab zu installieren.",open:"Mask Lab im Browser öffnen",
+      aDone:"Fertig. Mask Lab ist auf deinem Startbildschirm.",aInstalled:"Mask Lab ist auf diesem Gerät bereits installiert.",aOpen:"Mask Lab öffnen",
+      aTitle:"Auf Android installieren",aChrome:"Tippe in Chrome auf das Menü (drei Punkte) und wähle \"App installieren\" oder \"Zum Startbildschirm hinzufügen\".",aApkTitle:"Oder lade die App-Datei herunter",aApk:"APK herunterladen",aApkNote:"Android fragt eventuell, ob Installationen aus dem Browser erlaubt sind. Tippe auf Einstellungen, erlaube es, gehe zurück und tippe auf Installieren.",
+      aDesk:"Öffne diese Seite auf deinem Android-Telefon oder scanne den QR-Code unten."}
+  };
+  var APK="CARELIKA-Mask-Lab.apk";
+  var $=function(s){return document.querySelector(s)};
+  var store={get:function(k){try{return localStorage.getItem(k)}catch(e){return null}},set:function(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+
+  var q=new URLSearchParams(location.search).get("lang");
+  var nav=(navigator.language||"en").slice(0,2).toLowerCase();
+  var L=[q,store.get("ml-install-lang"),nav].filter(function(x){return x&&T[x]})[0]||"en";
+  function t(k){return (T[L]&&T[L][k])||T.en[k]}
+  function apply(){
+    document.documentElement.lang=L;$("#lang").value=L;
+    document.querySelectorAll("[data-t]").forEach(function(el){el.textContent=t(el.getAttribute("data-t"))});
+    if($("#aPanel").classList.contains("on"))renderAndroid(lastState);
+  }
+  $("#lang").addEventListener("change",function(){L=this.value;store.set("ml-install-lang",L);apply()});
+
+  var ua=navigator.userAgent;
+  var isIOS=/iPhone|iPad|iPod/.test(ua)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
+  var isAndroid=/Android/i.test(ua);
+  var standalone=matchMedia("(display-mode: standalone)").matches||navigator.standalone===true;
+  if(isAndroid)$("#android").classList.add("mine");
+  if(isIOS)$("#ios").classList.add("mine");
+
+  var deferred=null,lastState="help";
+  addEventListener("beforeinstallprompt",function(e){e.preventDefault();deferred=e});
+  addEventListener("appinstalled",function(){deferred=null;show("aPanel");renderAndroid("done")});
+
+  function show(id){["aPanel","iPanel"].forEach(function(p){$("#"+p).classList.toggle("on",p===id)})}
+
+  function renderAndroid(state){
+    lastState=state;var p=$("#aPanel");
+    if(state==="done"||state==="installed"){
+      p.innerHTML='<h2>'+t(state==="done"?"aDone":"aInstalled")+'</h2><a class="btn" href="../">'+t("aOpen")+'</a>';return;
+    }
+    var html='<h2>'+t("aTitle")+'</h2>';
+    if(!isAndroid&&!isIOS)html+='<p>'+t("aDesk")+'</p>';
+    else html+='<p>'+t("aChrome")+'</p>';
+    html+='<h2 style="margin-top:18px">'+t("aApkTitle")+'</h2><a class="btn ghost" href="'+APK+'" download>'+t("aApk")+'</a><p class="note">'+t("aApkNote")+'</p>';
+    p.innerHTML=html;
+  }
+
+  $("#android").addEventListener("click",function(){
+    if(standalone){show("aPanel");renderAndroid("installed");return}
+    if(deferred){
+      deferred.prompt();
+      deferred.userChoice.then(function(c){deferred=null;show("aPanel");renderAndroid(c.outcome==="accepted"?"done":"help")});
+      return;
+    }
+    show("aPanel");renderAndroid("help");
+  });
+  $("#ios").addEventListener("click",function(){show($("#iPanel").classList.contains("on")?null:"iPanel")});
+
+  // desktop: QR code to this page
+  if(!isAndroid&&!isIOS){
+    $("#qr").classList.add("on");
+    var s=document.createElement("script");
+    s.src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js";
+    s.onload=function(){try{var qr=qrcode(0,"M");qr.addData("https://masklab.carelikacosmetics.com/install/");qr.make();$("#qrc").innerHTML=qr.createSvgTag({cellSize:4,margin:0,scalable:true})}catch(e){$("#qr").classList.remove("on")}};
+    s.onerror=function(){$("#qr").classList.remove("on")};
+    document.head.appendChild(s);
+  }
+
+  if("serviceWorker" in navigator)navigator.serviceWorker.register("../sw.js",{scope:"../"}).catch(function(){});
+  apply();
+})();
+</script>
+</body>
+</html>
