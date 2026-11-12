@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>CARELIKA Mask Lab</title>
+<meta name="description" content="CARELIKA Mask Lab: professional mask protocols for cosmetologists. Serum and mask by skin type and concern, mixing ratios, textures, exposure timer. EN, ES, DE, RU, LV.">
+<link rel="canonical" href="https://masklab.carelikacosmetics.com/">
+<meta property="og:title" content="CARELIKA Mask Lab">
+<meta property="og:description" content="Professional mask protocols for cosmetologists: serum and mask by skin type, mixing ratios, textures, exposure timer.">
+<meta property="og:image" content="https://masklab.carelikacosmetics.com/img/cover.jpg">
+<meta property="og:url" content="https://masklab.carelikacosmetics.com/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"CARELIKA Mask Lab","url":"https://masklab.carelikacosmetics.com/","applicationCategory":"BusinessApplication","operatingSystem":"Any","inLanguage":["en","es","de","ru","lv"],"description":"Treatment-room guide for professional CARELIKA masks: serum and mask by skin type and concern, mixing ratios, textures and an exposure timer.","publisher":{"@type":"Organization","name":"CARELIKA","url":"https://carelikacosmetics.com"}}</script>
+<meta name="theme-color" content="#FFFFFF">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Mask Lab">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="img/icons/icon-192.png">
+<link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <button type="button" class="brandbtn" data-v="home" aria-label="Home"><img class="logo" src="img/logo.png" alt="CARELIKA Professional Skin Care"></button>
+    <span class="pg">Mask Lab</span>
+    <span class="sp"></span>
+    <button class="hbtn" id="searchbtn" type="button">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><span data-i18n="nav.search">Search</span>
+    </button>
+    <button class="hbtn" id="timerbtn" type="button">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 9.5v4l2.5 2M9.5 2.5h5M12 2.5V6"/></svg><span data-i18n="nav.timer">Timer</span>
+    </button>
+    <button class="hbtn" id="langbtn" type="button">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.4 3.5 5.3 3.5 8.5s-1.1 6.1-3.5 8.5M12 3.5C9.6 5.9 8.5 8.8 8.5 12s1.1 6.1 3.5 8.5"/></svg><span id="langcode">EN</span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- 0. HOME -->
+  <section class="view on" id="v-home">
+    <div class="wrap">
+      <img class="coverimg" src="img/cover.jpg" alt="" width="1170" height="540">
+      <div class="hero">
+        <div class="eyebrow" data-i18n="home.eyebrow"></div>
+        <h1 data-i18n="home.h1"></h1>
+        <p data-i18n="home.p"></p>
+        <button type="button" class="cta" data-v="pick"><span data-i18n="home.cta"></span> <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <div class="facts">
+          <div><b id="nprot">29</b><span data-i18n="home.f.prot"></span></div>
+          <div><b id="nmask">58</b><span data-i18n="home.f.mask"></span></div>
+          <div><b id="nmix">9</b><span data-i18n="home.f.mix"></span></div>
+        </div>
+      </div>
+
+      <button type="button" class="searchpill" id="homesearch">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        <span data-i18n="home.search"></span>
+      </button>
+
+      <div class="install" id="install">
+        <div class="bd"><b data-i18n="install.title"></b><span id="installtxt" data-i18n="install.txt"></span></div>
+        <button type="button" id="installgo" data-i18n="install.add"></button>
+        <button type="button" class="x" id="installx" aria-label="Hide">×</button>
+      </div>
+
+      <div class="bento">
+        <button type="button" class="tile wide" data-v="pick">
+          <span class="swatches" aria-hidden="true"><img src="img/skin-dry.jpg" alt=""><img src="img/skin-oily.jpg" alt=""><img src="img/skin-combination.jpg" alt=""><img src="img/skin-normal.jpg" alt=""><img src="img/skin-sensitive.jpg" alt=""><img src="img/skin-mature.jpg" alt=""></span>
+          <span class="go" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <b data-i18n="tile.skin"></b><span class="s" data-i18n="tile.skin.s"></span>
+        </button>
+        <button type="button" class="tile" data-v="mix">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M3.5 12h17c0 4.7-3.8 8-8.5 8s-8.5-3.3-8.5-8z"/><path d="M14.5 12l5.5-8"/></svg></span>
+          <b data-i18n="tile.mix"></b><span class="s" data-i18n="tile.mix.s"></span>
+        </button>
+        <button type="button" class="tile" id="tile-timer">
+          <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 9.5v4l2.5 2M9.5 2.5h5M12 2.5V6"/></svg></span>
+          <b data-i18n="tile.timer"></b><span class="s" data-i18n="tile.timer.s"></span>
+        </button>
+        <button type="button" class="tile" data-v="need">
+          <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1"/></svg></span>
+          <b data-i18n="tile.goal"></b><span class="s" id="tile-goal"></span>
+        </button>
+        <button type="button" class="tile" data-v="range">
+          <span class="ic"><svg viewBox="0 0 24 24"><rect x="6.5" y="3.5" width="11" height="3.5" rx=".5"/><path d="M5.5 7h13v12.5a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1z"/><path d="M9 12.5h6M9 15.5h4"/></svg></span>
+          <b data-i18n="tile.range"></b><span class="s" id="tile-range"></span>
+        </button>
+      </div>
+
+      <div class="lab" data-i18n="home.sig"></div>
+      <div class="strip sigstrip" id="sig"></div>
+
+      <div id="homesaved"></div>
+
+      <div class="lab" data-i18n="home.tex"></div>
+      <div class="strip" id="texgrid"></div>
+
+      <div class="rule" id="rule"></div>
+
+      <a class="probanner" data-pro href="https://carelikacosmetics.com/pages/professional-registration" target="_blank" rel="noopener">
+        <div><b data-i18n="pro.title"></b><span data-i18n="pro.sub"></span></div>
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- 1. SKIN -->
+  <section class="view" id="v-pick">
+    <div class="wrap">
+      <div class="vh"><div class="eyebrow" data-i18n="pick.eyebrow"></div><h2 data-i18n="pick.h2"></h2></div>
+      <div class="step"><i>1</i><b data-i18n="pick.s1"></b></div>
+      <div class="typegrid" id="types"></div>
+      <p class="typenote" id="typenote"></p>
+      <div class="step"><i>2</i><b data-i18n="pick.s2"></b></div>
+      <div class="chips" id="concerns"></div>
+      <div class="step"><i>3</i><b data-i18n="pick.s3"></b></div>
+      <div class="result" id="result"></div>
+    </div>
+  </section>
+
+  <!-- 2. GOAL -->
+  <section class="view" id="v-need">
+    <div class="wrap">
+      <div class="vh"><div class="eyebrow" data-i18n="need.eyebrow"></div><h2 data-i18n="need.h2"></h2></div>
+      <div class="chips scroll" id="needs"></div>
+      <img class="needhero" id="needhero" src="img/need-calm.jpg" alt="">
+      <p class="teach" id="needteach"></p>
+      <div class="rows" id="needlist"></div>
+
+      <div class="lab" data-i18n="need.clinic"></div>
+      <p class="warn" data-i18n="need.warn"></p>
+      <div id="ctxwrap"></div>
+    </div>
+  </section>
+
+  <!-- 3. MIX -->
+  <section class="view" id="v-mix">
+    <div class="wrap">
+      <div class="vh"><div class="eyebrow" data-i18n="mix.eyebrow"></div><h2 data-i18n="mix.h2"></h2><p data-i18n="mix.p"></p></div>
+
+      <div class="rule" id="rule2"></div>
+
+      <div class="calc">
+        <h3 data-i18n="water.h"></h3>
+        <p data-i18n="water.p"></p>
+        <div class="fld"><label for="wfam" data-i18n="f.family"></label><select id="wfam"></select></div>
+        <div class="fld"><label for="wg" data-i18n="f.powder"></label><input id="wg" type="number" min="1" step="1" inputmode="numeric"></div>
+        <div class="yield"><b class="num" id="wml">75</b><span data-i18n="water.unit"></span><em id="wd"></em></div>
+      </div>
+
+      <div class="lab" data-i18n="flow.where"></div>
+      <div class="flow">
+        <div><em>1</em><span data-i18n="flow.1"></span></div><div><em>2</em><span data-i18n="flow.2"></span></div><div class="hi"><em>3</em><span data-i18n="flow.3"></span></div><div class="hi"><em>4</em><span data-i18n="flow.4"></span></div><div><em>5</em><span data-i18n="flow.5"></span></div>
+      </div>
+      <p class="teach" data-i18n="mix.teach"></p>
+
+      <div class="lab" data-i18n="mix.all"></div>
+      <div class="mixgrid" id="mixgrid"></div>
+
+      <div class="lab" data-i18n="tips.h"></div>
+      <ul class="tips">
+        <li><b data-i18n="tip1.b"></b><span data-i18n="tip1"></span></li>
+        <li><b data-i18n="tip2.b"></b><span data-i18n="tip2"></span></li>
+        <li><b data-i18n="tip3.b"></b><span data-i18n="tip3"></span></li>
+      </ul>
+
+      <div class="calc">
+        <h3 data-i18n="jar.h"></h3>
+        <p data-i18n="jar.p"></p>
+        <div class="fld"><label for="calcfam" data-i18n="f.family"></label><select id="calcfam"></select></div>
+        <div class="fld2">
+          <div class="fld"><label for="calcjar" data-i18n="f.jar"></label><input id="calcjar" type="number" min="1" step="1" value="200" inputmode="numeric"></div>
+          <div class="fld"><label for="calccost" data-i18n="f.price"></label><input id="calccost" type="number" min="0" step="0.01" placeholder="24.00" inputmode="decimal"></div>
+        </div>
+        <div class="yield"><b class="num" id="yieldN">8</b><span id="yieldL"></span><em id="yieldD"></em></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. RANGE -->
+  <section class="view" id="v-range">
+    <div class="wrap">
+      <div class="vh"><div class="eyebrow" data-i18n="range.eyebrow"></div><h2 data-i18n="range.h2"></h2><p data-i18n="range.p"></p></div>
+      <div id="rangefilters"></div>
+      <div id="rangewrap"></div>
+
+      <div class="lab" data-i18n="range.sheets"></div>
+      <div class="mats">
+        <div class="mat"><b data-i18n="mat.bio.b"></b><span data-i18n="mat.bio"></span></div>
+        <div class="mat"><b data-i18n="mat.hyd.b"></b><span data-i18n="mat.hyd"></span></div>
+        <div class="mat"><b data-i18n="mat.tis.b"></b><span data-i18n="mat.tis"></span></div>
+      </div>
+
+      <div class="lab" data-i18n="range.serums"></div>
+      <div class="rows" id="serumlist"></div>
+      <div class="lab" data-i18n="range.creams"></div>
+      <div class="rows" id="creamlist"></div>
+      <p class="teach" data-i18n="range.note"></p>
+    </div>
+  </section>
+
+  <!-- 5. SEARCH + SAVED -->
+  <section class="view" id="v-find">
+    <div class="wrap">
+      <div class="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        <input id="q" type="search" data-i18n-ph="find.ph" autocomplete="off" aria-label="Search">
+      </div>
+      <div class="rows" id="hits"></div>
+      <div id="saved"></div>
+      <div class="foot">
+        <img src="img/logo.png" alt="CARELIKA Professional Skin Care">
+        <h3 data-i18n="foot.h"></h3>
+        <p data-i18n="foot.p"></p>
+        <a class="cta ghost" data-pro href="https://carelikacosmetics.com/pages/professional-registration" target="_blank" rel="noopener" data-i18n="foot.cta"></a>
+        <p style="margin-top:14px" data-i18n="foot.legal"></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<button class="pill" id="pill" type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 9.5v4l2.5 2M9.5 2.5h5M12 2.5V6"/></svg><b id="pillt">15:00</b><span id="pilln"></span></button>
+
+<div class="sheet" id="sheet" role="dialog" aria-modal="true">
+  <div class="lbl" data-i18n="t.label"></div>
+  <div class="nm" id="tname"></div>
+  <div class="ring">
+    <svg viewBox="0 0 120 120"><circle class="bg" cx="60" cy="60" r="54"/><circle class="fg" id="tring" cx="60" cy="60" r="54" stroke-dasharray="339.3" stroke-dashoffset="0"/></svg>
+    <div class="t"><b id="tleft">15:00</b><span id="tstate"></span></div>
+  </div>
+  <div class="presets" id="presets">
+    <button type="button" data-m="10"></button><button type="button" data-m="15"></button><button type="button" data-m="20"></button>
+  </div>
+  <div class="tctl">
+    <button type="button" id="tminus" data-i18n="t.minus"></button>
+    <button type="button" class="main" id="tmain"></button>
+    <button type="button" id="tplus" data-i18n="t.plus"></button>
+  </div>
+  <button type="button" class="close" id="tvoice"></button>
+  <button type="button" class="close" id="tstop" data-i18n="t.stop"></button>
+  <button type="button" class="close" id="thide" data-i18n="t.hide"></button>
+</div>
+
+<div class="sheet langsheet" id="langsheet" role="dialog" aria-modal="true">
+  <div class="lbl" data-i18n="nav.lang"></div>
+  <div class="langs" id="langs"></div>
+  <button type="button" class="close" id="langclose" data-i18n="t.hide"></button>
+</div>
+
+<nav class="tabs" role="tablist">
+  <div class="inner">
+    <button class="tab" role="tab" data-v="home" aria-selected="true"><svg viewBox="0 0 24 24"><path d="M4 10.5L12 4l8 6.5V20h-5.5v-5.5h-5V20H4z"/></svg><span data-i18n="nav.home"></span></button>
+    <button class="tab" role="tab" data-v="pick" aria-selected="false"><svg viewBox="0 0 24 24"><path d="M12 3c4.4 0 7.5 3.1 7.5 8 0 5.5-3.6 10-7.5 10s-7.5-4.5-7.5-10c0-4.9 3.1-8 7.5-8z"/><path d="M7.8 10.6c.9-1 2.5-1 3.3 0-.8 1-2.4 1-3.3 0zM12.9 10.6c.8-1 2.4-1 3.3 0-.9 1-2.5 1-3.3 0z"/><path d="M10 16h4"/></svg><span data-i18n="nav.skin"></span></button>
+    <button class="tab" role="tab" data-v="need" aria-selected="false"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1"/></svg><span data-i18n="nav.goal"></span></button>
+    <button class="tab" role="tab" data-v="mix" aria-selected="false"><svg viewBox="0 0 24 24"><path d="M3.5 12h17c0 4.7-3.8 8-8.5 8s-8.5-3.3-8.5-8z"/><path d="M14.5 12l5.5-8"/></svg><span data-i18n="nav.mix"></span></button>
+    <button class="tab" role="tab" data-v="range" aria-selected="false"><svg viewBox="0 0 24 24"><rect x="6.5" y="3.5" width="11" height="3.5" rx=".5"/><path d="M5.5 7h13v12.5a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1z"/><path d="M9 12.5h6M9 15.5h4"/></svg><span data-i18n="nav.range"></span></button>
+  </div>
+</nav>
+
+<script src="data.js"></script>
+<script src="photos.js"></script>
+<script src="site.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
