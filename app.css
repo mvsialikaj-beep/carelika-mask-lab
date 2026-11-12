@@ -15,10 +15,10 @@
   --tabh:64px;
   --top:env(safe-area-inset-top,0px);
   --bot:env(safe-area-inset-bottom,0px);
-  color-scheme:light;
+  color-scheme:only light;
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-html{background:var(--paper)}
+html{background:var(--paper);color-scheme:only light}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--ff);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased;
   padding-bottom:calc(var(--tabh) + var(--bot) + 12px);overscroll-behavior-y:none}
 img{max-width:100%;display:block}
