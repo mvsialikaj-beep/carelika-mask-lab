@@ -104,7 +104,7 @@ h1{margin:0;font-size:26px;line-height:1.15;font-weight:300;letter-spacing:.02em
       <h1>CARELIKA<br>Mask Lab</h1>
     </div>
   </section>
-  <p class="lead" data-t="lead">Serum, mask, mixing and exposure for every skin. Choose your phone and install in a few seconds.</p>
+  <p class="lead" data-t="lead">Serum, mask, mixing and exposure for every skin. Choose your device and install in a few seconds.</p>
   <ul class="feats">
     <li data-t="f1">Works offline</li><li data-t="f2">Exposure timer</li><li>EN · LV · RU · ES · DE</li>
   </ul>
@@ -131,6 +131,13 @@ h1{margin:0;font-size:26px;line-height:1.15;font-weight:300;letter-spacing:.02em
       </ol>
       <p class="note" data-t="iNote">The Mask Lab icon appears on your Home Screen. It opens full screen and works without internet.</p>
     </div>
+
+    <button class="store" id="win" type="button">
+      <svg class="os" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00A4EF" d="M2 4.6l8.2-1.1v7.9H2zM11.2 3.3L22 1.8v9.6H11.2zM2 12.4h8.2v7.9L2 19.2zM11.2 12.4H22v9.7l-10.8-1.5z"/></svg>
+      <span class="t"><span class="n">Windows</span><span class="s" data-t="wSub">Edge or Chrome, 1 click</span><span class="tag" data-t="mine">Your device</span></span>
+      <span class="go" data-t="install">Install</span>
+    </button>
+    <div class="panel" id="wPanel" aria-live="polite"></div>
   </div>
 
   <div class="qr" id="qr">
@@ -147,27 +154,27 @@ h1{margin:0;font-size:26px;line-height:1.15;font-weight:300;letter-spacing:.02em
 <script>
 (function(){
   var T={
-    en:{aSam:"In Samsung Internet, tap the install icon in the address bar, or open the menu (three lines) and choose \"Add page to\" > \"Home screen\".",aBest:"Tip: in Chrome, the Install button above works in one tap.",eyebrow:"Free app for professionals",lead:"Serum, mask, mixing and exposure for every skin. Choose your phone and install in a few seconds.",f1:"Works offline",f2:"Exposure timer",aSub:"Phone and tablet",iSub:"Safari, 3 taps",mine:"Your device",install:"Install",
+    en:{wSub:"Edge or Chrome, 1 click",wTitle:"Install on Windows",wHelp:"In Edge or Chrome, click the install icon at the right end of the address bar, then \"Install\". Mask Lab appears in the Start menu.",wNote:"No install button? Open this page in Microsoft Edge or Google Chrome.",aSam:"In Samsung Internet, tap the install icon in the address bar, or open the menu (three lines) and choose \"Add page to\" > \"Home screen\".",aBest:"Tip: in Chrome, the Install button above works in one tap.",eyebrow:"Free app for professionals",lead:"Serum, mask, mixing and exposure for every skin. Choose your device and install in a few seconds.",f1:"Works offline",f2:"Exposure timer",aSub:"Phone and tablet",iSub:"Safari, 3 taps",mine:"Your device",install:"Install",
       iTitle:"Add Mask Lab to your Home Screen",i1:"Open this page in Safari.",i2a:"Tap Share",i2b:"at the bottom of the screen.",i3:"Choose \"Add to Home Screen\", then tap \"Add\".",iNote:"The Mask Lab icon appears on your Home Screen. It opens full screen and works without internet.",
       qr:"Scan with your phone camera to install Mask Lab.",open:"Open Mask Lab in the browser",
       aDone:"Done. Mask Lab is on your Home Screen.",aInstalled:"Mask Lab is already installed on this device.",aOpen:"Open Mask Lab",
       aTitle:"Install on Android",aChrome:"In Chrome, tap the menu (three dots) and choose \"Install app\" or \"Add to Home Screen\".",aDesk:"Open this page on your Android phone, or scan the QR code below."},
-    lv:{aSam:"Samsung Internet pārlūkā pieskaries instalēšanas ikonai adreses joslā vai atver izvēlni (trīs svītras) un izvēlies \"Pievienot lapu\" > \"Sākuma ekrāns\".",aBest:"Padoms: Chrome pārlūkā poga Instalēt strādā ar vienu pieskārienu.",eyebrow:"Bezmaksas lietotne profesionāļiem",lead:"Serums, maska, sajaukšana un iedarbības laiks katram ādas tipam. Izvēlies savu telefonu un uzinstalē dažās sekundēs.",f1:"Strādā bez interneta",f2:"Iedarbības taimeris",aSub:"Telefons un planšete",iSub:"Safari, 3 pieskārieni",mine:"Tava ierīce",install:"Instalēt",
+    lv:{wSub:"Edge vai Chrome, 1 klikšķis",wTitle:"Instalēšana Windows",wHelp:"Edge vai Chrome pārlūkā noklikšķini uz instalēšanas ikonas adreses joslas labajā malā un tad \"Instalēt\". Mask Lab parādīsies Start izvēlnē.",wNote:"Nav instalēšanas pogas? Atver šo lapu Microsoft Edge vai Google Chrome.",aSam:"Samsung Internet pārlūkā pieskaries instalēšanas ikonai adreses joslā vai atver izvēlni (trīs svītras) un izvēlies \"Pievienot lapu\" > \"Sākuma ekrāns\".",aBest:"Padoms: Chrome pārlūkā poga Instalēt strādā ar vienu pieskārienu.",eyebrow:"Bezmaksas lietotne profesionāļiem",lead:"Serums, maska, sajaukšana un iedarbības laiks katram ādas tipam. Izvēlies savu ierīci un uzinstalē dažās sekundēs.",f1:"Strādā bez interneta",f2:"Iedarbības taimeris",aSub:"Telefons un planšete",iSub:"Safari, 3 pieskārieni",mine:"Tava ierīce",install:"Instalēt",
       iTitle:"Pievieno Mask Lab sākuma ekrānam",i1:"Atver šo lapu Safari pārlūkā.",i2a:"Pieskaries Kopīgot",i2b:"ekrāna apakšā.",i3:"Izvēlies \"Pievienot sākuma ekrānam\" un pieskaries \"Pievienot\".",iNote:"Mask Lab ikona parādīsies sākuma ekrānā. Lietotne atveras pilnekrānā un strādā bez interneta.",
       qr:"Noskenē ar telefona kameru, lai uzinstalētu Mask Lab.",open:"Atvērt Mask Lab pārlūkā",
       aDone:"Gatavs. Mask Lab ir tavā sākuma ekrānā.",aInstalled:"Mask Lab šajā ierīcē jau ir uzinstalēts.",aOpen:"Atvērt Mask Lab",
       aTitle:"Instalēšana Android",aChrome:"Chrome pārlūkā pieskaries izvēlnei (trīs punkti) un izvēlies \"Instalēt lietotni\" vai \"Pievienot sākuma ekrānam\".",aDesk:"Atver šo lapu savā Android telefonā vai noskenē QR kodu zemāk."},
-    ru:{aSam:"В Samsung Internet нажмите значок установки в адресной строке или откройте меню (три линии) и выберите «Добавить страницу на» > «Главный экран».",aBest:"Совет: в Chrome кнопка «Установить» работает в одно касание.",eyebrow:"Бесплатное приложение для профессионалов",lead:"Сыворотка, маска, смешивание и время экспозиции для любой кожи. Выберите свой телефон и установите за несколько секунд.",f1:"Работает без интернета",f2:"Таймер экспозиции",aSub:"Телефон и планшет",iSub:"Safari, 3 касания",mine:"Ваше устройство",install:"Установить",
+    ru:{wSub:"Edge или Chrome, 1 клик",wTitle:"Установка на Windows",wHelp:"В Edge или Chrome нажмите значок установки справа в адресной строке, затем «Установить». Mask Lab появится в меню «Пуск».",wNote:"Нет кнопки установки? Откройте эту страницу в Microsoft Edge или Google Chrome.",aSam:"В Samsung Internet нажмите значок установки в адресной строке или откройте меню (три линии) и выберите «Добавить страницу на» > «Главный экран».",aBest:"Совет: в Chrome кнопка «Установить» работает в одно касание.",eyebrow:"Бесплатное приложение для профессионалов",lead:"Сыворотка, маска, смешивание и время экспозиции для любой кожи. Выберите своё устройство и установите за несколько секунд.",f1:"Работает без интернета",f2:"Таймер экспозиции",aSub:"Телефон и планшет",iSub:"Safari, 3 касания",mine:"Ваше устройство",install:"Установить",
       iTitle:"Добавьте Mask Lab на экран «Домой»",i1:"Откройте эту страницу в Safari.",i2a:"Нажмите «Поделиться»",i2b:"внизу экрана.",i3:"Выберите «На экран \"Домой\"» и нажмите «Добавить».",iNote:"Иконка Mask Lab появится на экране «Домой». Приложение открывается на весь экран и работает без интернета.",
       qr:"Отсканируйте камерой телефона, чтобы установить Mask Lab.",open:"Открыть Mask Lab в браузере",
       aDone:"Готово. Mask Lab на главном экране.",aInstalled:"Mask Lab уже установлен на этом устройстве.",aOpen:"Открыть Mask Lab",
       aTitle:"Установка на Android",aChrome:"В Chrome нажмите меню (три точки) и выберите «Установить приложение» или «Добавить на главный экран».",aDesk:"Откройте эту страницу на телефоне Android или отсканируйте QR-код ниже."},
-    es:{aSam:"En Samsung Internet, toca el icono de instalar en la barra de direcciones o abre el menú (tres líneas) y elige \"Añadir página a\" > \"Pantalla de inicio\".",aBest:"Consejo: en Chrome, el botón Instalar funciona con un solo toque.",eyebrow:"App gratuita para profesionales",lead:"Sérum, mascarilla, mezcla y tiempo de exposición para cada piel. Elige tu teléfono e instala en unos segundos.",f1:"Funciona sin internet",f2:"Temporizador de exposición",aSub:"Teléfono y tableta",iSub:"Safari, 3 toques",mine:"Tu dispositivo",install:"Instalar",
+    es:{wSub:"Edge o Chrome, 1 clic",wTitle:"Instalar en Windows",wHelp:"En Edge o Chrome, haz clic en el icono de instalar al final de la barra de direcciones y luego en \"Instalar\". Mask Lab aparece en el menú Inicio.",wNote:"¿No ves el botón de instalar? Abre esta página en Microsoft Edge o Google Chrome.",aSam:"En Samsung Internet, toca el icono de instalar en la barra de direcciones o abre el menú (tres líneas) y elige \"Añadir página a\" > \"Pantalla de inicio\".",aBest:"Consejo: en Chrome, el botón Instalar funciona con un solo toque.",eyebrow:"App gratuita para profesionales",lead:"Sérum, mascarilla, mezcla y tiempo de exposición para cada piel. Elige tu dispositivo e instala en unos segundos.",f1:"Funciona sin internet",f2:"Temporizador de exposición",aSub:"Teléfono y tableta",iSub:"Safari, 3 toques",mine:"Tu dispositivo",install:"Instalar",
       iTitle:"Añade Mask Lab a tu pantalla de inicio",i1:"Abre esta página en Safari.",i2a:"Toca Compartir",i2b:"en la parte inferior de la pantalla.",i3:"Elige \"Añadir a pantalla de inicio\" y toca \"Añadir\".",iNote:"El icono de Mask Lab aparece en tu pantalla de inicio. Se abre a pantalla completa y funciona sin internet.",
       qr:"Escanea con la cámara del teléfono para instalar Mask Lab.",open:"Abrir Mask Lab en el navegador",
       aDone:"Listo. Mask Lab está en tu pantalla de inicio.",aInstalled:"Mask Lab ya está instalada en este dispositivo.",aOpen:"Abrir Mask Lab",
       aTitle:"Instalar en Android",aChrome:"En Chrome, toca el menú (tres puntos) y elige \"Instalar aplicación\" o \"Añadir a pantalla de inicio\".",aDesk:"Abre esta página en tu teléfono Android o escanea el código QR de abajo."},
-    de:{aSam:"Tippe in Samsung Internet auf das Installieren-Symbol in der Adressleiste oder öffne das Menü (drei Striche) und wähle \"Seite hinzufügen zu\" > \"Startbildschirm\".",aBest:"Tipp: In Chrome funktioniert die Schaltfläche Installieren mit einem Tipp.",eyebrow:"Kostenlose App für Profis",lead:"Serum, Maske, Anmischen und Einwirkzeit für jeden Hauttyp. Wähle dein Telefon und installiere in wenigen Sekunden.",f1:"Funktioniert offline",f2:"Einwirk-Timer",aSub:"Telefon und Tablet",iSub:"Safari, 3 Tipps",mine:"Dein Gerät",install:"Installieren",
+    de:{wSub:"Edge oder Chrome, 1 Klick",wTitle:"Auf Windows installieren",wHelp:"Klicke in Edge oder Chrome auf das Installieren-Symbol rechts in der Adressleiste und dann auf \"Installieren\". Mask Lab erscheint im Startmenü.",wNote:"Kein Installieren-Symbol? Öffne diese Seite in Microsoft Edge oder Google Chrome.",aSam:"Tippe in Samsung Internet auf das Installieren-Symbol in der Adressleiste oder öffne das Menü (drei Striche) und wähle \"Seite hinzufügen zu\" > \"Startbildschirm\".",aBest:"Tipp: In Chrome funktioniert die Schaltfläche Installieren mit einem Tipp.",eyebrow:"Kostenlose App für Profis",lead:"Serum, Maske, Anmischen und Einwirkzeit für jeden Hauttyp. Wähle dein Gerät und installiere in wenigen Sekunden.",f1:"Funktioniert offline",f2:"Einwirk-Timer",aSub:"Telefon und Tablet",iSub:"Safari, 3 Tipps",mine:"Dein Gerät",install:"Installieren",
       iTitle:"Mask Lab zum Home-Bildschirm hinzufügen",i1:"Öffne diese Seite in Safari.",i2a:"Tippe auf Teilen",i2b:"unten am Bildschirm.",i3:"Wähle \"Zum Home-Bildschirm\" und tippe auf \"Hinzufügen\".",iNote:"Das Mask Lab Symbol erscheint auf deinem Home-Bildschirm. Die App öffnet im Vollbild und funktioniert ohne Internet.",
       qr:"Mit der Handykamera scannen, um Mask Lab zu installieren.",open:"Mask Lab im Browser öffnen",
       aDone:"Fertig. Mask Lab ist auf deinem Startbildschirm.",aInstalled:"Mask Lab ist auf diesem Gerät bereits installiert.",aOpen:"Mask Lab öffnen",
@@ -184,6 +191,7 @@ h1{margin:0;font-size:26px;line-height:1.15;font-weight:300;letter-spacing:.02em
     document.documentElement.lang=L;$("#lang").value=L;
     document.querySelectorAll("[data-t]").forEach(function(el){el.textContent=t(el.getAttribute("data-t"))});
     if($("#aPanel").classList.contains("on"))renderAndroid(lastState);
+    if($("#wPanel").classList.contains("on"))renderWin("help");
   }
   $("#lang").addEventListener("change",function(){L=this.value;store.set("ml-install-lang",L);apply()});
 
@@ -191,15 +199,17 @@ h1{margin:0;font-size:26px;line-height:1.15;font-weight:300;letter-spacing:.02em
   var isIOS=/iPhone|iPad|iPod/.test(ua)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
   var isAndroid=/Android/i.test(ua);
   var isSamsung=/SamsungBrowser/i.test(ua);
+  var isWin=!isAndroid&&/Windows/i.test(ua);
   var standalone=matchMedia("(display-mode: standalone)").matches||navigator.standalone===true;
   if(isAndroid)$("#android").classList.add("mine");
   if(isIOS)$("#ios").classList.add("mine");
+  if(isWin)$("#win").classList.add("mine");
 
   var deferred=null,lastState="help";
   addEventListener("beforeinstallprompt",function(e){e.preventDefault();deferred=e});
-  addEventListener("appinstalled",function(){deferred=null;show("aPanel");renderAndroid("done")});
+  addEventListener("appinstalled",function(){deferred=null;if(isWin||!isAndroid&&!isIOS){show("wPanel");renderWin("done")}else{show("aPanel");renderAndroid("done")}});
 
-  function show(id){["aPanel","iPanel"].forEach(function(p){$("#"+p).classList.toggle("on",p===id)})}
+  function show(id){["aPanel","iPanel","wPanel"].forEach(function(p){$("#"+p).classList.toggle("on",p===id)})}
 
   function renderAndroid(state){
     lastState=state;var p=$("#aPanel");
@@ -221,6 +231,21 @@ h1{margin:0;font-size:26px;line-height:1.15;font-weight:300;letter-spacing:.02em
       return;
     }
     show("aPanel");renderAndroid("help");
+  });
+
+  function renderWin(state){
+    var p=$("#wPanel");
+    if(state==="done"||state==="installed"){p.innerHTML='<h2>'+t(state==="done"?"aDone":"aInstalled")+'</h2><a class="btn" href="../">'+t("aOpen")+'</a>';return}
+    p.innerHTML='<h2>'+t("wTitle")+'</h2><p>'+t("wHelp")+'</p><p class="note">'+t("wNote")+'</p>';
+  }
+  $("#win").addEventListener("click",function(){
+    if(standalone){show("wPanel");renderWin("installed");return}
+    if(deferred&&!isAndroid&&!isIOS){
+      deferred.prompt();
+      deferred.userChoice.then(function(c){deferred=null;show("wPanel");renderWin(c.outcome==="accepted"?"done":"help")});
+      return;
+    }
+    show("wPanel");renderWin("help");
   });
   $("#ios").addEventListener("click",function(){show($("#iPanel").classList.contains("on")?null:"iPanel")});
 
