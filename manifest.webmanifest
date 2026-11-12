@@ -10,10 +10,59 @@
   "background_color": "#FFFFFF",
   "theme_color": "#FFFFFF",
   "lang": "en",
-  "categories": ["business", "health", "productivity"],
+  "categories": [
+    "business",
+    "health",
+    "productivity"
+  ],
   "icons": [
-    {"src": "img/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
-    {"src": "img/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
-    {"src": "img/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+    {
+      "src": "img/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "img/screens/home.png",
+      "sizes": "1170x2532",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Home: pick a protocol in three taps"
+    },
+    {
+      "src": "img/screens/pick.png",
+      "sizes": "1170x2532",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Protocol builder by skin type and concern"
+    },
+    {
+      "src": "img/screens/need.png",
+      "sizes": "1170x2532",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Masks by treatment goal with exposure timer"
+    },
+    {
+      "src": "img/screens/mix.png",
+      "sizes": "1170x2532",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mixing specs for every powder mask"
+    }
   ]
 }
