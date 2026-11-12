@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.carelikacosmetics.masklab.twa",
+        "sha256_cert_fingerprints": ["18:11:58:A6:0A:DA:71:18:AF:33:8D:F0:C6:08:7C:6C:6F:2D:33:A9:0A:A0:50:87:EE:00:3F:60:C1:C5:60:F3"]
+      }
+    }]
